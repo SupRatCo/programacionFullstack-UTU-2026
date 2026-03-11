@@ -1,0 +1,25 @@
+
+## Descripción
+
+Cada carpeta contiene la resolución de un ejercicio específico.  
+Los ejercicios están separados para mantener el código organizado y facilitar su revisión.
+
+| Carpeta | Descripción  |
+|---------|--------------|
+| Ejer1   | Ejercicio 1  |
+| Ejer2   | Ejercicio 2  |
+| Ejer3   | Ejercicio 3  |
+| Ejer4   | Ejercicio 4  |
+| Ejer5   | Ejercicio 5  |
+| Ejer6   | Ejercicio 6  |
+| Ejer7   | Ejercicio 7  |
+| Ejer8   | Ejercicio 8  |
+| Ejer9   | Ejercicio 9  |
+| Ejer10  | Ejercicio 10 |
+
+## Cómo usar el repositorio
+
+1. Clonar el repositorio
+
+```bash
+git clone https://github.com/usuario/nombre-repositorio.git
