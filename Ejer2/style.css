@@ -3,6 +3,28 @@ body {
             margin: 0;
             background-color: #f4f4f4;
         }
+
+    .xp-bar {
+        background: linear-gradient(to bottom, #3a6ea5, #2b5797);
+        padding: 8px;
+     border-bottom: 2px solid #1f3f73;
+     box-shadow: inset 0 1px 0 #6ea0d6;
+    }
+
+    .xp-bar button {
+      background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+      border: 1px solid #7f9db9;
+       padding: 5px 12px;
+         font-family: Tahoma, sans-serif;
+         font-size: 13px;
+          cursor: pointer;
+}
+
+    .xp-bar button:hover {
+        background: linear-gradient(to bottom, #eaf3ff, #cbdfff);
+    }
+
+
         header {
             background-color: #222;
             color: white;

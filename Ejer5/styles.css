@@ -1,0 +1,162 @@
+/*--Estilos En General--*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+ 
+.xp-bar {
+    background: linear-gradient(to bottom, #3a6ea5, #2b5797);
+    padding: 8px;
+    border-bottom: 2px solid #1f3f73;
+    box-shadow: inset 0 1px 0 #6ea0d6;
+}
+
+.xp-bar button {
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+    border: 1px solid #7f9db9;
+    padding: 5px 12px;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.xp-bar button:hover {
+    background: linear-gradient(to bottom, #eaf3ff, #cbdfff);
+}
+
+.nivel {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+ 
+.nivel-titulo {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+ 
+ 
+/*--Nivel 1: Cuadrados de colores--*/
+.cuadrados {
+  display: flex;
+  gap: 10px;
+}
+ 
+.cuadrado {
+  width: 160px;
+  height: 140px;
+  border: 2px solid #222;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+ 
+.rojo  { background-color: #e8503a; }
+.verde { background-color: #2e7d52; }
+.azul  { background-color: #4a7fb5; }
+ 
+ 
+/*--Nivel 2: Lista de cursos--*/
+.cursos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid #dde1e7;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+}
+ 
+.curso-card {
+  padding: 20px 24px;
+  border-left: 4px solid #4a7fb5;
+  border-bottom: 1px solid #eef0f3;
+  background-color: #fff;
+}
+ 
+.curso-card:last-child {
+  border-bottom: none;
+}
+ 
+.etiqueta {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 10px;
+}
+ 
+.etiqueta.nuevo   { background-color: #4a7fb5; }
+.etiqueta.popular { background-color: #4a7fb5; }
+ 
+.curso-titulo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+ 
+.curso-desc {
+  font-size: 14px;
+  color: #666;
+}
+ 
+ 
+/*--Nivel 3: Panel de estadísticas--*/
+.stats-panel {
+  display: flex;
+  background-color: #1a1f2e;
+  border-top: 3px solid #444;
+  overflow: hidden;
+}
+ 
+.stat-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 10px;
+  background-color: #1e2540;
+}
+ 
+.stat-card.destacado {
+  background-color: #e8446a;
+}
+ 
+.stat-numero {
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1;
+}
+ 
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}

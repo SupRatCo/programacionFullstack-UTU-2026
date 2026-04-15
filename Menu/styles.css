@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('../BackgroundXP.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Tahoma, sans-serif;
+}
+
+/*--ventana--*/
+.window {
+    width: 800px;
+    margin: 60px auto;
+    border: 2px solid #0a246a;
+    background: #ece9d8;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+/*--Barra Suprerior--*/
+.title-bar {
+    background: linear-gradient(to right, #0a246a, #3a6ea5);
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #ffffff33;
+}
+
+/*--menu--*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+/*--items--*/
+.menu a {
+    text-decoration: none;
+    color: black;
+    background: #f0f0f0;
+
+    /*--efecto 3D--*/
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #7f9db9;
+    border-bottom: 2px solid #7f9db9;
+
+    margin-bottom: 6px;
+    padding: 14px;
+    font-size: 14px;
+
+    transition: all 0.15s;
+}
+
+/*--hover--*/
+.menu a:hover {
+    background: #cde6ff;
+    border: 2px solid #3a6ea5;
+}
+
+/*--click--*/
+.menu a:active {
+    border-top: 2px solid #7f9db9;
+    border-left: 2px solid #7f9db9;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    background: #aacbf1;
+}
+
+/*--foco--*/
+.menu a:focus {
+    outline: 1px dotted black;
+}

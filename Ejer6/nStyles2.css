@@ -1,0 +1,49 @@
+body {
+  background: #ccc;
+  font-family: Arial;
+}
+
+
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.producto {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.celeste {
+  background: #6fa8dc;
+}
+
+.celeste:hover {
+  transform: scale(1.1);
+}
+
+.rojo {
+  background: #f06c6c;
+  width: 200px;
+}
+
+/*--Sale--*/
+.sale {
+  position: absolute;
+  left: -20px;
+  background: red;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

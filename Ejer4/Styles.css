@@ -1,11 +1,7 @@
-/* ===========================
-   FUENTES
-=========================== */
+/*--FUENTES--*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
  
-/* ===========================
-   RESET & BASE
-=========================== */
+/*--Reset y Base--*/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -62,9 +58,29 @@ body {
   line-height: 1.7;
 }
  
-/* ===========================
-   LINK DE VOLVER
-=========================== */
+/*--Link de Volver pa Atras--*/
+
+.xp-bar {
+    background: linear-gradient(to bottom, #3a6ea5, #2b5797);
+    padding: 8px;
+    border-bottom: 2px solid #1f3f73;
+    box-shadow: inset 0 1px 0 #6ea0d6;
+}
+
+.xp-bar button {
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+    border: 1px solid #7f9db9;
+    padding: 5px 12px;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.xp-bar button:hover {
+    background: linear-gradient(to bottom, #eaf3ff, #cbdfff);
+}
+
+
 body > section:first-child {
   background: var(--madera-oscura);
   padding: 8px 24px;
@@ -85,9 +101,7 @@ body > section:first-child a:hover {
   text-decoration: underline;
 }
  
-/* ===========================
-   HEADER
-=========================== */
+/*--header--*/
 .site-header {
   position: relative;
   background-color: var(--madera-oscura);
@@ -161,7 +175,7 @@ body > section:first-child a:hover {
   font-weight: 300;
 }
  
-/* NAV */
+/*--Header Nav--*/
 .header-nav {
   display: flex;
   justify-content: center;
@@ -190,7 +204,7 @@ body > section:first-child a:hover {
   color: var(--dorado);
 }
  
-/* Línea decorativa bajo el header */
+/*--Linea decorativa abajo del header--*/
 .header-olas {
   position: absolute;
   bottom: 0;
@@ -211,18 +225,14 @@ body > section:first-child a:hover {
   opacity: 0.6;
 }
  
-/* ===========================
-   MAIN
-=========================== */
+/*--Main--*/
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 16px;
 }
  
-/* ===========================
-   SECTIONS — BASE
-=========================== */
+/*--Sections y Base--*/
 .section {
   margin: 60px 0;
 }
@@ -237,7 +247,7 @@ main {
   overflow: hidden;
 }
  
-/* Esquina decorativa de madera */
+/*--Esquina decorativa de madera--*/
 .section-inner::before {
   content: '';
   position: absolute;
@@ -285,9 +295,7 @@ main {
   font-style: italic;
 }
  
-/* ===========================
-   SECCIÓN JUEGOS
-=========================== */
+/*--Seccion de Jueguitos--*/
 .section-juegos .section-inner {
   background-color: var(--pergamino);
 }
@@ -331,9 +339,7 @@ main {
   line-height: 1.75;
 }
  
-/* ===========================
-   SECCIÓN ACTIVIDADES
-=========================== */
+/*--Seccion de Actividades--*/
 .section-actividades .section-inner {
   background-color: var(--crema);
 }
@@ -391,9 +397,7 @@ main {
   padding: 0;
 }
  
-/* ===========================
-   FOOTER
-=========================== */
+/*--footer--*/
 .site-footer {
   background-color: var(--madera-oscura);
   background-image:
@@ -445,7 +449,7 @@ main {
   font-family: Georgia, serif;
 }
  
-/* STATS */
+/*--Stats--*/
 .footer-resumen {
   display: flex;
   justify-content: center;
@@ -491,9 +495,7 @@ main {
   padding-top: 20px;
 }
  
-/* ===========================
-   SEPARADOR DECORATIVO
-=========================== */
+/*--Separador Decorativo--*/
 .section + .section::before {
   content: '';
   display: block;
@@ -507,9 +509,7 @@ main {
   margin: -40px auto 0;
 }
  
-/* ===========================
-   RESPONSIVE
-=========================== */
+/*--responsive--*/
 @media (max-width: 600px) {
   .section-inner {
     padding: 28px 20px 28px 26px;

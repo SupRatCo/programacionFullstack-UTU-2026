@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/*--nav--*/
+.nav {
+  background: #2f3b3b;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+/*--Categorías sticky--*/
+.categorias {
+  background: #6fa8dc;
+  padding: 15px;
+  position: sticky;
+  top: 50px; /*--debajo del nav --*/
+}
+
+.linea {
+  border-bottom: 3px dashed red;
+}
+
+/*--Contenido--*/
+.contenido {
+  padding: 20px;
+}
