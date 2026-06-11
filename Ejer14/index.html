@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cat API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="../Menu/index.html">Volver al menu</a>
+  </header>
+
+  <main class="contenedor">
+    <h1>Imagenes de Gatos con forma de Gato</h1>
+    <p>Trae una imagen desde The Cat API y te deja votar si te gusta o no.</p>
+
+    <section class="panel">
+      <div class="acciones">
+        <button id="traerGato" type="button">Traer gato</button>
+        <button id="meGusta" type="button" disabled>Me gusta</button>
+        <button id="noMeGusta" type="button" disabled>No me gusta</button>
+      </div>
+
+      <div id="visor" class="visor">
+        <p>Todavia no hay imagen.</p>
+      </div>
+
+      <div class="contadores">
+        <strong id="likes">Me gusta: 0</strong>
+        <strong id="dislikes">No me gusta: 0</strong>
+      </div>
+
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="../Menu/index.html">Volver al menu</a>
+  </header>
+
+  <main class="contenedor">
+    <h1>Galeria interactiva (Ya que es fuera de fecha al menos hago los dos.)</h1>
+    <p>Poné imagenes desde una URL, marcalas como favoritas, eliminalas y filtra la galeria.</p>
+
+    <form id="formGaleria" class="panel">
+      <label>
+        Titulo de la imagen
+        <input id="titulo" type="text" placeholder="Ej: Atardecer">
+      </label>
+
+      <label>
+        URL de la imagen
+        <input id="url" type="url" placeholder="https://...">
+      </label>
+
+      <button type="submit">Agregar</button>
+      <p id="error" class="error"></p>
+    </form>
+
+    <section class="herramientas">
+      <div class="contadores">
+        <span id="total">Total: 0</span>
+        <span id="favoritas">Favoritas: 0</span>
+        <span id="noFavoritas">No favoritas: 0</span>
+      </div>
+
+      <div class="filtros">
+        <button type="button" data-filtro="todas">Mostrar todas</button>
+        <button type="button" data-filtro="favoritas">Mostrar favoritas</button>
+        <button type="button" data-filtro="no-favoritas">Mostrar no favoritas</button>
+        <button id="borrarGaleria" type="button">Borrar galeria</button>
+      </div>
+    </section>
+
+    <section id="galeria" class="galeria"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

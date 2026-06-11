@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica DOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="../Menu/index.html">Volver al menu</a>
+    <button id="modoOscuro" type="button">Modo oscuro</button>
+  </header>
+
+  <main class="contenedor">
+    <h1 id="tituloPrincipal">Practica de DOM con JavaScript</h1>
+    <p id="parrafo">Usa los botones para modificar textos, imagenes, clases, listas y formularios.</p>
+
+    <section class="panel">
+      <div class="botonera">
+        <button id="cambiarTitulo" type="button">Cambiar titulo</button>
+        <button id="cambiarParrafo" type="button">Cambiar parrafo</button>
+        <button id="cambiarImagen" type="button">Cambiar imagen</button>
+        <button id="agregarClase" type="button">Agregar clase</button>
+        <button id="quitarClase" type="button">Quitar clase</button>
+        <button id="agregarItem" type="button">Agregar item</button>
+      </div>
+
+      <img id="imagenDemo" src="https://picsum.photos/id/1015/600/300" alt="Paisaje de ejemplo">
+
+      <label>
+        Mensaje para alert
+        <input id="mensajeInput" type="text" placeholder="Escribe algo">
+      </label>
+      <button id="mostrarAlert" type="button">Mostrar alert</button>
+
+      <ul id="listaDemo">
+        <li>Elemento inicial</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Formulario</h2>
+      <form id="formDatos">
+        <label>
+          Nombre
+          <input id="nombre" type="text" placeholder="Tu nombre">
+        </label>
+
+        <label>
+          Color favorito
+          <input id="color" type="color" value="#247b7b">
+        </label>
+
+        <label>
+          Mensaje
+          <textarea id="mensajeForm" rows="3" placeholder="Escribe un mensaje"></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+        <p id="error" class="error"></p>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

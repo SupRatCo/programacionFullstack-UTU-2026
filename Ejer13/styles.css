@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #151015;
+  color: #f8efe8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+  background: #0c090c;
+  padding: 14px 22px;
+}
+
+.topbar a,
+button {
+  border: 0;
+  border-radius: 4px;
+  background: #c92f2f;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #a82525;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.presentacion {
+  background: #2a1118;
+  border-bottom: 5px solid #c92f2f;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+.etiqueta {
+  color: #ffd166;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+.panel,
+.chiste {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 18px;
+  background: #211b21;
+  border: 1px solid #4a2b33;
+  border-radius: 8px;
+}
+
+.panel {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: bold;
+}
+
+select {
+  border: 1px solid #5d4650;
+  border-radius: 4px;
+  background: #f8efe8;
+  color: #211b21;
+  font: inherit;
+  padding: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-column: 1 / -1;
+  border: 1px solid #5d4650;
+  border-radius: 6px;
+  margin: 0;
+  padding: 12px;
+}
+
+fieldset label {
+  align-items: center;
+  flex-direction: row;
+  font-weight: normal;
+}
+
+.mensaje {
+  color: #ffd166;
+  font-weight: bold;
+  grid-column: 1 / -1;
+  min-height: 22px;
+  margin: 0;
+}
+
+.chiste {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.chiste::before {
+  content: "MIC";
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  background: #ffd166;
+  border-radius: 50%;
+  color: #211b21;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.chiste strong {
+  color: #ffd166;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+}

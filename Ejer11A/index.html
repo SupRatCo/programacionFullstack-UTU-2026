@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="../Menu/index.html">Volver al menu</a>
+  </header>
+
+  <main class="contenedor">
+    <h1>Lista de tareas</h1>
+    <p>Poné tareas, marcalas como completadas, eliminalas y filtralas segun su estado.</p>
+
+    <form id="formTareas" class="panel">
+      <label>
+        Tarea
+        <input id="textoTarea" type="text" placeholder="Ej: Estudiar DOM">
+      </label>
+      <button type="submit">Agregar</button>
+      <p id="error" class="error"></p>
+    </form>
+
+    <section class="herramientas">
+      <div class="contadores">
+        <span id="total">Total: 0</span>
+        <span id="completadas">Completadas: 0</span>
+        <span id="pendientes">Pendientes: 0</span>
+      </div>
+
+      <div class="filtros">
+        <button type="button" data-filtro="todas">Todas</button>
+        <button type="button" data-filtro="completadas">Completadas</button>
+        <button type="button" data-filtro="pendientes">Pendientes</button>
+        <button id="borrarTodas" type="button">Borrar todas</button>
+      </div>
+    </section>
+
+    <ul id="listaTareas" class="lista"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

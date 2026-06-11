@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JokeAPI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="../Menu/index.html">Volver al menu</a>
+  </header>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <p class="etiqueta">Ejercicio 13</p>
+      <h1>Chistes del JokeAPI</h1>
+      <p>Elegí algunas opciones y traé un chiste usando fetch, async/await y manejo del DOM.</p>
+    </section>
+
+    <section class="panel">
+      <label>
+        Categoria
+        <select id="categoria">
+          <option value="Any">Any</option>
+          <option value="Programming">Programming</option>
+          <option value="Misc">Misc</option>
+          <option value="Pun">Pun</option>
+          <option value="Spooky">Spooky</option>
+          <option value="Christmas">Christmas</option>
+        </select>
+      </label>
+
+      <label>
+        Tipo de chiste
+        <select id="tipo">
+          <option value="any">Cualquiera</option>
+          <option value="single">Single</option>
+          <option value="twopart">Twopart</option>
+        </select>
+      </label>
+
+      <label>
+        Idioma
+        <select id="idioma">
+          <option value="es">Espanol</option>
+          <option value="en">Ingles</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Evitar contenido</legend>
+        <label><input type="checkbox" value="nsfw" checked> nsfw</label>
+        <label><input type="checkbox" value="religious" checked> religious</label>
+        <label><input type="checkbox" value="political" checked> political</label>
+        <label><input type="checkbox" value="racist" checked> racist</label>
+        <label><input type="checkbox" value="sexist" checked> sexist</label>
+        <label><input type="checkbox" value="explicit" checked> explicit</label>
+      </fieldset>
+
+      <button id="traerChiste" type="button">Traer chiste</button>
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+
+    <section id="chiste" class="chiste">
+      <p>Todavia no hay chiste.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

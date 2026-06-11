@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f2f5f8;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+  background: #26384d;
+  padding: 14px 20px;
+}
+
+.topbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel {
+  display: grid;
+  gap: 16px;
+  background: white;
+  border: 1px solid #d8e0e8;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.acciones,
+.contadores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #2c7be5;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 14px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.visor {
+  display: grid;
+  width: 100%;
+  min-height: 260px;
+  place-items: center;
+  overflow: hidden;
+  background: #e8eef5;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.visor img {
+  max-width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+}
+
+.mensaje {
+  color: #b00020;
+  font-weight: bold;
+  min-height: 22px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 16px;
+  }
+
+  .visor img {
+    max-height: 320px;
+  }
+}

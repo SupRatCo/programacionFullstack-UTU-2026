@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #141414;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.oscuro {
+  background: #f4f4f4;
+  color: #181818;
+}
+
+.topbar {
+  align-items: center;
+  background: #080808;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.topbar strong {
+  color: #e50914;
+  font-size: 1.7rem;
+  letter-spacing: 0;
+}
+
+.oscuro .topbar {
+  color: white;
+}
+
+.topbar a,
+.topbar button,
+button {
+  border: 0;
+  border-radius: 4px;
+  background: #e50914;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 9px 13px;
+  text-decoration: none;
+}
+
+.topbar .volver {
+  background: transparent;
+  border: 1px solid #555;
+}
+
+button:hover,
+.topbar a:hover {
+  background: #b20710;
+}
+
+.contenedor {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px 30px;
+}
+
+.presentacion,
+.panel,
+.barra {
+  margin-bottom: 22px;
+}
+
+.hero {
+  align-items: flex-end;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 20, 0.7)), url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  min-height: 250px;
+  padding: 34px;
+}
+
+.etiqueta,
+.subtitulo {
+  color: #e50914;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 7vw, 4.6rem);
+  line-height: 1;
+  margin: 0 0 8px;
+}
+
+.presentacion p {
+  max-width: 560px;
+}
+
+.panel {
+  background: #1f1f1f;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.oscuro form,
+.oscuro .tarjeta,
+.oscuro .barra,
+.oscuro .panel {
+  background: white;
+  border-color: #dedede;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  font: inherit;
+  padding: 10px;
+}
+
+.oscuro input,
+.oscuro select,
+.oscuro textarea {
+  background: white;
+  border-color: #cfcfcf;
+  color: #181818;
+}
+
+form button {
+  align-self: end;
+}
+
+.mensaje {
+  align-self: end;
+  color: #ffb3b7;
+  font-weight: bold;
+  margin: 0;
+}
+
+.barra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: #1f1f1f;
+  border-radius: 8px;
+}
+
+.barra p {
+  margin: 0;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.filtros button {
+  background: #2d2d2d;
+  border: 1px solid #444;
+}
+
+.filtros button:hover {
+  background: #e50914;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  min-height: 140px;
+}
+
+.tarjeta {
+  background: #1f1f1f;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  overflow: hidden;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #333;
+}
+
+.tarjeta h2 {
+  cursor: pointer;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.tarjeta h2.resaltado {
+  color: #e50914;
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+
+.tarjeta p {
+  margin: 0 0 6px;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.favorito {
+  border-color: #e50914;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.28);
+}
+
+@media (max-width: 720px) {
+  .barra,
+  .topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero {
+    min-height: 220px;
+    padding: 22px;
+  }
+
+  .filtros {
+    justify-content: flex-start;
+  }
+
+  .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}

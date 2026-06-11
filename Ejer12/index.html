@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi coleccion favorita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="volver" href="../Menu/index.html">Volver al menu</a>
+    <strong>RatFlix</strong>
+    <button id="modoBtn" type="button">Cambiar modo</button>
+  </header>
+
+  <main class="contenedor">
+    <section class="presentacion hero">
+      <div>
+        <p class="etiqueta">Coleccion personal</p>
+        <h1>Mi coleccion favorita</h1>
+        <p>Agrega videojuegos, peliculas o series y arma tu propio catalogo.</p>
+      </div>
+    </section>
+
+    <section class="barra">
+      <div>
+        <p class="subtitulo">Explorar</p>
+        <p id="contador">Elementos agregados: 0</p>
+      </div>
+      <div class="filtros">
+        <button type="button" data-filtro="Todos">Todos</button>
+        <button type="button" data-filtro="Videojuego">Videojuegos</button>
+        <button type="button" data-filtro="Pelicula">Peliculas</button>
+        <button type="button" data-filtro="Serie">Series</button>
+        <button type="button" data-filtro="Favoritos">Favoritos</button>
+        <button type="button" data-filtro="Pendiente">Pendientes</button>
+        <button type="button" data-filtro="En progreso">En progreso</button>
+        <button type="button" data-filtro="Terminado">Terminados</button>
+      </div>
+    </section>
+
+    <section id="tarjetas" class="tarjetas"></section>
+
+    <section class="panel">
+      <h2>Agregar a mi lista</h2>
+      <form id="formColeccion">
+        <label>
+          Nombre
+          <input id="nombre" type="text" placeholder="Ej: Minecraft">
+        </label>
+
+        <label>
+          Descripcion breve
+          <textarea id="descripcion" rows="3" placeholder="Escribe una descripcion corta"></textarea>
+        </label>
+
+        <label>
+          Tipo
+          <select id="tipo">
+            <option value="">Elegir tipo</option>
+            <option value="Videojuego">Videojuego</option>
+            <option value="Pelicula">Pelicula</option>
+            <option value="Serie">Serie</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </label>
+
+        <label>
+          Estado
+          <select id="estado">
+            <option value="">Elegir estado</option>
+            <option value="Pendiente">Pendiente</option>
+            <option value="En progreso">En progreso / Viendo / Jugando</option>
+            <option value="Terminado">Terminado</option>
+          </select>
+        </label>
+
+        <label>
+          Calificacion del 1 al 5
+          <input id="calificacion" type="number" min="1" max="5" placeholder="1 - 5">
+        </label>
+
+        <label>
+          Imagen Banner URL
+          <input id="imagen" type="url" placeholder="https://...">
+        </label>
+
+        <button type="submit">Agregar</button>
+        <p id="mensajeError" class="mensaje"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
